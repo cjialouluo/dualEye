@@ -29,7 +29,7 @@
    #include <SPI.h>
    #include <TFT_eSPI.h> 
    #include "EYEA.h"
-   #include "EYEB.h"
+   // #include "EYEB.h"  // 注释掉EYEB.h，使用EYEA.h代替
    TFT_eSPI tft = TFT_eSPI();    
     
    #define device_A_CS  2              
@@ -269,7 +269,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160,160,gImage_B1);              
+   tft.pushImage (0, 0,160,160,gImage_A1);              
    digitalWrite (device_B_CS, HIGH);
    
 
@@ -283,7 +283,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B2);
+   tft.pushImage (0, 0,160, 160,gImage_A2);
    digitalWrite (device_B_CS, HIGH); 
   
    delay (frameTime);
@@ -296,7 +296,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B3);
+   tft.pushImage (0, 0,160, 160,gImage_A3);
    digitalWrite (device_B_CS, HIGH);
    
    delay (frameTime);
@@ -308,7 +308,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B4);
+   tft.pushImage (0, 0,160, 160,gImage_A4);
    digitalWrite (device_B_CS, HIGH);
    
 
@@ -321,7 +321,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B5);
+   tft.pushImage (0, 0,160, 160,gImage_A5);
    digitalWrite (device_B_CS, HIGH);
    
 
@@ -335,7 +335,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B6);
+   tft.pushImage (0, 0,160, 160,gImage_A6);
    digitalWrite (device_B_CS, HIGH);
    delay (frameTime);
 
@@ -347,7 +347,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B7);
+   tft.pushImage (0, 0,160, 160,gImage_A7);
    digitalWrite (device_B_CS, HIGH);
    
    delay (frameTime);
@@ -360,7 +360,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B8);
+   tft.pushImage (0, 0,160, 160,gImage_A8);
    digitalWrite (device_B_CS, HIGH); 
    delay (frameTime);
 
@@ -372,7 +372,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B9);
+   tft.pushImage (0, 0,160, 160,gImage_A9);
    digitalWrite (device_B_CS, HIGH);
    
    delay (frameTime);
@@ -385,7 +385,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B10);
+   tft.pushImage (0, 0,160, 160,gImage_A10);
    digitalWrite (device_B_CS, HIGH); 
    delay (frameTime);
 // // ============================================================================ 
@@ -395,7 +395,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B11);
+   tft.pushImage (0, 0,160, 160,gImage_A11);
    digitalWrite (device_B_CS, HIGH); 
    delay (frameTime);
 // // ============================================================================ 
@@ -405,7 +405,7 @@ void Demo_3()
    digitalWrite (device_A_CS, HIGH); 
    
    digitalWrite (device_B_CS, LOW);  
-   tft.pushImage (0, 0,160, 160,gImage_B12);
+   tft.pushImage (0, 0,160, 160,gImage_A12);
    digitalWrite (device_B_CS, HIGH); 
    delay (frameTime);
 // // ============================================================================ 
